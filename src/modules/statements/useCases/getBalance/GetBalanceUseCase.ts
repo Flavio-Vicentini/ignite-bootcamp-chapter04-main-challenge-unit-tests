@@ -35,7 +35,6 @@ export class GetBalanceUseCase {
       user_id,
       with_statement: true
     });
-
     return balance as IResponse;
   }
 }

@@ -15,7 +15,6 @@ export class CreateStatementController {
 
     const splittedPath = request.originalUrl.split('/')
     const type = splittedPath[splittedPath.length - 1] as OperationType;
-
     const createStatement = container.resolve(CreateStatementUseCase);
 
     const statement = await createStatement.execute({
